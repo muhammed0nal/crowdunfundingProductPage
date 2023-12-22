@@ -1,0 +1,719 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(246, 243, 240);
+}
+.header {
+  width: 100%;
+  height: 25vw;
+  background-image: url(./images/image-hero-desktop.jpg);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+}
+.site-name h1 {
+  color: white;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.head-btn {
+  color: white;
+  padding: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-first {
+  width: 40%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 0;
+  margin-top: -140px;
+  text-align: center;
+}
+.content-first img {
+  margin-top: -25px;
+}
+.content-first h1 {
+  font-weight: 700;
+  margin-top: 15px;
+}
+.content-first p {
+  font-size: 18px;
+  opacity: 70%;
+  margin-top: 15px;
+}
+.content-first-content-btn-div {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.content-first-content-btn-div-first-btn {
+  background-color: rgb(65, 170, 104);
+  padding: 15px;
+  width: 40%;
+  border-radius: 40px;
+  color: white;
+  font-size: 16px;
+  margin-left: 30px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.6s background-color;
+}
+.content-first-content-btn-div-first-btn:hover {
+  background-color: rgb(36, 118, 66);
+  transition: 1s background-color;
+}
+
+.content-first-content-btn-div-second-btn {
+  background-color: rgb(239, 238, 233);
+  padding: 10px 0px;
+  border: none;
+  width: 30%;
+  border-radius: 40px;
+  color: gray;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.content-first-content-btn-div-second-btn::before {
+  content: url(./images/icon-bookmark.svg);
+  position: absolute;
+  top: -3px;
+  left: -1px;
+  width: 10px;
+}
+.content-second {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  background-color: white;
+  margin-top: 25px;
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+.line-div {
+  width: 40%;
+  border-radius: 10px;
+  height: 10px;
+  background-color: rgb(228, 209, 209);
+  position: relative;
+}
+.line {
+  background-color: rgb(36, 118, 66);
+  width: 0;
+  max-width: 100%;
+  border-radius: 10px;
+  height: 10px;
+  position: absolute;
+}
+.cizgi {
+  border-left: 1px solid #bcb3ac;
+}
+.con {
+  width: 40%;
+  background-color: white;
+  margin-top: -25px;
+  height: 50px;
+  padding: 20px;
+}
+.content-second p {
+  font-size: 30px;
+  font-weight: 900;
+}
+.content-second span {
+  font-size: 17px;
+  opacity: 60%;
+}
+.about-project {
+  width: 40%;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.about-project {
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+.about-project-content {
+  margin-bottom: 20px;
+}
+.about-project-content h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+.about-project-content p {
+  opacity: 50%;
+  font-size: 18px;
+}
+.price {
+  padding: 20px;
+}
+.price-first,
+.price-second,
+.price-third {
+  border: 1px solid rgb(205, 203, 203);
+  border-radius: 5px;
+  padding: 25px;
+  margin-top: 30px;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.top h3 {
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.top h5 {
+  color: rgb(58, 179, 139);
+  font-weight: 600;
+}
+.mid p {
+  margin-bottom: 20px;
+  opacity: 55%;
+  font-size: 17px;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.bottom h3 {
+  font-size: 24px;
+  font-weight: 900;
+}
+.bottom span {
+  font-size: 15px;
+  opacity: 60%;
+}
+.bottom button {
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(54, 136, 83);
+  padding: 15px 30px;
+}
+.price-third {
+  opacity: 40%;
+}
+.price-third .top h3 {
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.price-third .top h5 {
+  color: rgb(58, 179, 139);
+  font-weight: 600;
+}
+.price-third .mid p {
+  margin-bottom: 20px;
+  opacity: 50%;
+  font-size: 17px;
+}
+.price-third .bottom h3 {
+  font-size: 24px;
+  font-weight: 900;
+  opacity: 50%;
+}
+.price-third .bottom span {
+  font-size: 15px;
+  opacity: 20%;
+}
+.price-third .bottom button {
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: not-allowed;
+  background-color: rgb(81, 82, 81);
+  padding: 15px 30px;
+  opacity: 40%;
+}
+
+/* popup */
+.p-all {
+  /* display: flex; */
+  display: none;
+
+  align-items: center;
+  flex-direction: column;
+
+  /* position: fixed; */
+  /* top: 0;
+  right: 2%;
+  left: 2%;
+  height: 10vh; */
+}
+.p {
+  width: 50%;
+  overflow: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 40px;
+}
+.p-f-f {
+  display: flex;
+  justify-content: space-between;
+}
+.p-f-f h3 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.p-f-f img {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+}
+.p-f p {
+  opacity: 70%;
+  margin-bottom: 25px;
+}
+.p-s {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.p-s-f {
+  display: flex;
+  margin-bottom: 14px;
+  cursor: pointer;
+}
+.p-s-f-check {
+  margin-left: 10px;
+  margin-right: 30px;
+  width: 17px;
+  height: 17px;
+  background-color: rgb(252, 252, 252);
+  border-radius: 50px;
+  border: 1px gray solid;
+}
+.p-s h4 {
+  font-weight: 900;
+}
+.p-s p {
+  margin-left: 55px;
+}
+.p-border {
+  border: 1px gray solid;
+  border-radius: 10px;
+}
+.p-three {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.p-three-check {
+  margin-left: 10px;
+  margin-right: 30px;
+  width: 17px;
+  height: 17px;
+  background-color: rgb(252, 252, 252);
+  border-radius: 50px;
+  border: 1px gray solid;
+}
+.p-three-f {
+  display: flex;
+  cursor: pointer;
+}
+.p-three-left {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ortak-div {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.pledge {
+  color: rgb(51, 211, 195);
+}
+.p-three-left span {
+  opacity: 60%;
+}
+.p-three p {
+  margin-top: 20px;
+  margin-left: 55px;
+}
+
+/*  */
+.p-four {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.p-four-check {
+  margin-left: 10px;
+  margin-right: 30px;
+  width: 17px;
+  height: 17px;
+  background-color: rgb(252, 252, 252);
+  border-radius: 50px;
+  border: 1px gray solid;
+}
+.p-four-f {
+  display: flex;
+  cursor: pointer;
+}
+.p-four-left {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ortak-div-four {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.pledge-four {
+  color: rgb(51, 211, 195);
+}
+.p-four-left span {
+  opacity: 60%;
+}
+.p-four p {
+  margin-top: 20px;
+  margin-left: 55px;
+}
+
+/*  */
+
+.p-five {
+  padding: 20px;
+  margin-bottom: 20px;
+  cursor: not-allowed;
+  opacity: 40%;
+}
+.p-five-check {
+  margin-left: 10px;
+  margin-right: 30px;
+  width: 17px;
+  height: 17px;
+  background-color: rgb(252, 252, 252);
+  border-radius: 50px;
+  border: 1px gray solid;
+}
+.p-five-f {
+  display: flex;
+}
+.p-five-left {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ortak-div-five {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.pledge-five {
+  color: rgb(51, 211, 195);
+}
+.p-five-left span {
+  opacity: 60%;
+}
+.p-five p {
+  margin-top: 20px;
+  margin-left: 55px;
+}
+
+/* .header,
+.container {
+  opacity: 30%;
+} */
+
+.cash-screen-one {
+  /* display: flex; */
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px rgb(205, 205, 205) solid;
+  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.cash-number-one input::before {
+  content: "$";
+  position: absolute;
+  opacity: 60%;
+}
+.enter-your-pledge-one {
+  opacity: 50%;
+  font-weight: 900;
+  margin-left: -30px;
+}
+.cash-number-one {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+.cash-number-one input {
+  width: 40%;
+  padding: 10px;
+  border: 1px solid gainsboro;
+  border-radius: 30px;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 900;
+  background: url(./images/kisspng-clip-art-united-states-dollar-portable-network-gra-vippacket-svg-png-icon-free-download-247422-o-5b8d625a2712d9.7746721915359924101601.png)
+    scroll 7px 12px;
+  background-size: 15px;
+  background-repeat: no-repeat;
+}
+.continue-btn-one {
+  width: 40%;
+  padding: 10px;
+  border: 1px solid gainsboro;
+  border-radius: 30px;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(58, 179, 139);
+  font-weight: 900;
+}
+.cash-screen-two {
+  display: flex;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px rgb(205, 205, 205) solid;
+  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.cash-number-two input::before {
+  content: "$";
+  position: absolute;
+  opacity: 60%;
+}
+.enter-your-pledge-two {
+  opacity: 50%;
+  font-weight: 900;
+  margin-left: -30px;
+}
+.cash-number-two {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+.cash-number-two input {
+  width: 40%;
+  padding: 10px;
+  border: 1px solid gainsboro;
+  border-radius: 30px;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 900;
+  background: url(./images/kisspng-clip-art-united-states-dollar-portable-network-gra-vippacket-svg-png-icon-free-download-247422-o-5b8d625a2712d9.7746721915359924101601.png)
+    scroll 7px 12px;
+  background-size: 15px;
+  background-repeat: no-repeat;
+}
+.continue-btn-two {
+  width: 40%;
+  padding: 10px;
+  border: 1px solid gainsboro;
+  border-radius: 30px;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(58, 179, 139);
+  font-weight: 900;
+}
+.cash-screen-three {
+  display: flex;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px rgb(205, 205, 205) solid;
+  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.cash-number-three input::before {
+  content: "$";
+  position: absolute;
+  opacity: 60%;
+}
+.enter-your-pledge-three {
+  opacity: 50%;
+  font-weight: 900;
+  margin-left: -30px;
+}
+.cash-number-three {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+.cash-number-three input {
+  width: 40%;
+  padding: 10px;
+  border: 1px solid gainsboro;
+  border-radius: 30px;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 900;
+  background: url(./images/kisspng-clip-art-united-states-dollar-portable-network-gra-vippacket-svg-png-icon-free-download-247422-o-5b8d625a2712d9.7746721915359924101601.png)
+    scroll 7px 12px;
+  background-size: 15px;
+  background-repeat: no-repeat;
+}
+.continue-btn-three {
+  width: 40%;
+  padding: 10px;
+  border: 1px solid gainsboro;
+  border-radius: 30px;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(58, 179, 139);
+  font-weight: 900;
+}
+.cash-screen-four {
+  display: flex;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px rgb(205, 205, 205) solid;
+  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.cash-number-four input::before {
+  content: "$";
+  position: absolute;
+  opacity: 60%;
+}
+.enter-your-pledge-four {
+  opacity: 50%;
+  font-weight: 900;
+  margin-left: -30px;
+}
+.cash-number-four {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+.cash-number-four input {
+  width: 40%;
+  padding: 10px;
+  border: 1px solid gainsboro;
+  border-radius: 30px;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 900;
+  background: url(./images/kisspng-clip-art-united-states-dollar-portable-network-gra-vippacket-svg-png-icon-free-download-247422-o-5b8d625a2712d9.7746721915359924101601.png)
+    scroll 7px 12px;
+  background-size: 15px;
+  background-repeat: no-repeat;
+}
+.continue-btn-four {
+  width: 40%;
+  padding: 10px;
+  border: 1px solid gainsboro;
+  border-radius: 30px;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(58, 179, 139);
+  font-weight: 900;
+}
+#uyari-two,
+#uyari-one,
+#uyari-three {
+  display: none;
+  color: red;
+  opacity: 60%;
+  font-size: 12px;
+}
+
+.succes {
+  width: 40%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  top: 900px;
+  left: 30%;
+  z-index: 5;
+}
+#succes-img {
+  margin-bottom: 20px;
+}
+.succes p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+}
+.succes button {
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(54, 136, 83);
+  padding: 15px 30px;
+}
+
+@media screen and (max-width: 1356px) {
+  .content-first {
+    width: 50%;
+    margin-top: -100px;
+  }
+}
+@media screen and (max-width: 1097px) {
+  .content-first {
+    width: 60%;
+    margin-top: -70px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .content-first {
+    margin-top: -40px;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content-first {
+    margin-top: -40px;
+    width: 70%;
+  }
+}
